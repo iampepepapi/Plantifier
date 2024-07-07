@@ -5,237 +5,6 @@
 	(uuid "7dc9043a-ef1d-4623-9acc-dd1f81d56424")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:AD797"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 1.27 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "AD797"
-				(at 1.27 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf"
-				(at 1.27 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ultralow Distortion, Ultralow Noise Op Amp, DIP-8/SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "single opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AD797_0_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "AD797_1_1"
-				(pin input line
-					(at 0 -7.62 90)
-					(length 5.08)
-					(name "BAL"
-						(effects
-							(font
-								(size 0.508 0.508)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -7.62 90)
-					(length 6.35)
-					(name "COMP"
-						(effects
-							(font
-								(size 0.508 0.508)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 7.62 270)
-					(length 5.08)
-					(name "C/B"
-						(effects
-							(font
-								(size 0.508 0.508)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "MCU_Module:Arduino_UNO_R2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -863,23 +632,23 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 54.61) (xy 78.74 62.23)
+			(xy 81.28 53.34) (xy 81.28 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "063633e9-155c-4256-b279-0b9e73a9b1c3")
+		(uuid "a26044c6-015c-4f4d-96b7-93699659c2b5")
 	)
 	(wire
 		(pts
-			(xy 81.28 54.61) (xy 81.28 62.23)
+			(xy 78.74 115.57) (xy 78.74 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "086566af-4217-4a50-a804-5d85875b879e")
+		(uuid "acce3400-fdc4-4a76-a0ab-46cf18d444ed")
 	)
 	(symbol
 		(lib_id "MCU_Module:Arduino_UNO_R2")
@@ -1031,92 +800,6 @@
 			(project ""
 				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
 					(reference "A1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:AD797")
-		(at 165.1 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d46f7db4-798b-4f73-8c9d-855449d7048d")
-		(property "Reference" "U1"
-			(at 175.26 64.8014 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AD797"
-			(at 175.26 67.3414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD797.pdf"
-			(at 166.37 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ultralow Distortion, Ultralow Noise Op Amp, DIP-8/SOIC-8"
-			(at 165.1 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c2dd1100-5861-4b76-80da-126b9c46938d")
-		)
-		(pin "2"
-			(uuid "204c4eb9-0527-4fdf-847d-8b337e69dcac")
-		)
-		(pin "5"
-			(uuid "4524ed5b-7395-4e3c-ab0b-5e8931682d99")
-		)
-		(pin "8"
-			(uuid "23070894-0ac8-4b43-a460-99cc0561a521")
-		)
-		(pin "1"
-			(uuid "722347dc-fd89-4b52-80bb-a23ffee55c2f")
-		)
-		(pin "6"
-			(uuid "a26f393b-8d00-432b-8fd5-747a64e08b33")
-		)
-		(pin "4"
-			(uuid "e9cf8c00-5e97-491b-80b2-fbf256ff4042")
-		)
-		(pin "7"
-			(uuid "6c3d470b-a9b4-4d70-bca6-40a7534432d4")
-		)
-		(instances
-			(project ""
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "U1")
 					(unit 1)
 				)
 			)
