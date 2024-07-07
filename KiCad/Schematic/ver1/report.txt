@@ -1,0 +1,11 @@
+Info: Processing symbol 'C1:SparkFun Qwiic Soil Moisture Sensor:C0201'.
+Info: Processing symbol 'J1:SparkFun Qwiic Soil Moisture Sensor:JST-SH-4P-90'.
+Info: Processing symbol 'JP1:SparkFun Qwiic Soil Moisture Sensor:2X03'.
+Info: Processing symbol 'U1:SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU'.
+Error: Cannot add C1 (footprint 'SparkFun Qwiic Soil Moisture Sensor:C0201' not found).
+Error: Cannot add J1 (footprint 'SparkFun Qwiic Soil Moisture Sensor:JST-SH-4P-90' not found).
+Error: Cannot add JP1 (footprint 'SparkFun Qwiic Soil Moisture Sensor:2X03' not found).
+Error: Cannot add U1 (footprint 'SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU' not found).
+
+
+Info: Total warnings: 0, errors: 4.

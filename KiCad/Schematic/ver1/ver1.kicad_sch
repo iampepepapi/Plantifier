@@ -5,39 +5,31 @@
 	(uuid "7dc9043a-ef1d-4623-9acc-dd1f81d56424")
 	(paper "A4")
 	(lib_symbols
-		(symbol "MCU_Module:Arduino_UNO_R2"
+		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:ATTINY85-ARDUINOTINY85-20-SMT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "A"
-				(at -10.16 23.495 0)
+			(property "Reference" "U"
+				(at -12.7 10.414 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.778 1.5113)
 					)
 					(justify left bottom)
+					(hide yes)
 				)
 			)
-			(property "Value" "Arduino_UNO_R2"
-				(at 5.08 -26.67 0)
+			(property "Value" ""
+				(at -12.7 -7.874 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.778 1.5113)
 					)
 					(justify left top)
-				)
-			)
-			(property "Footprint" "Module:Arduino_UNO_R2"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
+			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU"
 				(at 0 0 0)
 				(effects
 					(font
@@ -46,7 +38,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Arduino UNO Microcontroller Module, release 2"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -55,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Arduino UNO R3 Microcontroller Module Atmel AVR USB"
+			(property "Description" "Atmel 8-pin 2/4/8kB flash uC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -64,33 +56,67 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Arduino*UNO*R2*"
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "Arduino_UNO_R2_0_1"
-				(rectangle
-					(start -10.16 22.86)
-					(end 10.16 -25.4)
+			(symbol "ATTINY85-ARDUINOTINY85-20-SMT_1_0"
+				(polyline
+					(pts
+						(xy -12.7 -7.62) (xy -12.7 10.16)
+					)
 					(stroke
 						(width 0.254)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-			)
-			(symbol "Arduino_UNO_R2_1_1"
-				(pin no_connect line
-					(at -10.16 -20.32 0)
-					(length 2.54) hide
-					(name "NC"
+				(polyline
+					(pts
+						(xy -12.7 10.16) (xy 12.7 10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -7.62) (xy -12.7 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 10.16) (xy 12.7 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "(~{RESET}/A0)5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -106,189 +132,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -2.54 180)
+					(at 15.24 2.54 180)
 					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "SDA/A4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "SCL/A5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 15.24 0)
-					(length 2.54)
-					(name "D0/RX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 12.7 0)
-					(length 2.54)
-					(name "D1/TX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 10.16 0)
-					(length 2.54)
-					(name "D2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 7.62 0)
-					(length 2.54)
-					(name "D3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "D4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 10.16 180)
-					(length 2.54)
-					(name "IOREF"
+					(name "(A3)3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -304,189 +150,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -12.7 2.54 0)
+					(at 15.24 5.08 180)
 					(length 2.54)
-					(name "D5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "D6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "D7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "D8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "D9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -10.16 0)
-					(length 2.54)
-					(name "D10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -12.7 0)
-					(length 2.54)
-					(name "D11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -15.24 0)
-					(length 2.54)
-					(name "D12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -12.7 -17.78 0)
-					(length 2.54)
-					(name "D13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -27.94 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 15.24 180)
-					(length 2.54)
-					(name "~{RESET}"
+					(name "~{(A2})4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -501,28 +167,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at 12.7 5.08 180)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
 					(length 2.54)
-					(name "AREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 2.54 25.4 270)
-					(length 2.54)
-					(name "3V3"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -537,10 +185,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 5.08 25.4 270)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
 					(length 2.54)
-					(name "+5V"
+					(name "~{(SDA/MOSI})0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -555,10 +203,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -27.94 90)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
 					(length 2.54)
-					(name "GND"
+					(name "~{(MISO})1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -573,10 +221,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 2.54 -27.94 90)
+				(pin bidirectional line
+					(at 15.24 0 180)
 					(length 2.54)
-					(name "GND"
+					(name "(SCL/SCK/A1)2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -591,10 +239,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 25.4 270)
+				(pin bidirectional line
+					(at -15.24 7.62 0)
 					(length 2.54)
-					(name "VIN"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -609,17 +257,855 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 0 180)
+			)
+		)
+		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:C-0201"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at -4.318 0.381 0)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at 1.27 0.381 0)
+				(effects
+					(font
+						(size 1.27 1.0795)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:C0201"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C-0201_1_0"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.635 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -1.27) (xy -0.635 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy -0.635 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 0.635 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.27) (xy 0.635 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "A0"
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:JST-SH-4P-1.0"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -3.81 -7.62 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at 6.35 3.81 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:JST-SH-4P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "JST-SH-4P-1.0_1_0"
+				(polyline
+					(pts
+						(xy -6.35 -5.08) (xy -6.35 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 2.54) (xy 6.35 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -5.08) (xy -6.35 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 2.54) (xy 6.35 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin bidirectional line
+					(at -3.81 5.08 270)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 5.08 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 1.27 5.08 270)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 3.81 5.08 270)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "NC1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "NC2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:PINHD-2X3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -6.35 5.715 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -6.35 -7.62 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:2X03"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PIN HEADER"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PINHD-2X3_1_0"
+				(polyline
+					(pts
+						(xy -6.35 -5.08) (xy 8.89 -5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 5.08) (xy -6.35 -5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -5.08) (xy 8.89 5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 5.08) (xy -6.35 5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive inverted
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:Earth"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Earth"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"Earth\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global ground gnd"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Earth_0_1"
+				(polyline
+					(pts
+						(xy -0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.127 -2.54) (xy 0.127 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Earth_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -630,66 +1116,515 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 81.28 53.34) (xy 81.28 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a26044c6-015c-4f4d-96b7-93699659c2b5")
+	(junction
+		(at 175.26 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ddb0342-7f01-445e-a73a-ed5e5e0a4047")
+	)
+	(junction
+		(at 132.08 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "465d23c8-54af-4c33-b848-2e4b6cf9138c")
+	)
+	(junction
+		(at 132.08 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8516b69d-063b-4f7c-bd4c-de4cd163200b")
+	)
+	(junction
+		(at 172.72 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa673707-1507-4b44-b7d4-0a6bea7297d9")
 	)
 	(wire
 		(pts
-			(xy 78.74 115.57) (xy 78.74 124.46)
+			(xy 175.26 69.85) (xy 175.26 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "acce3400-fdc4-4a76-a0ab-46cf18d444ed")
+		(uuid "034a34e3-107b-4cbf-b83f-40ca0cb5fb77")
+	)
+	(wire
+		(pts
+			(xy 193.04 67.31) (xy 176.53 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e183ba-8470-4414-bb55-a81c3e7f84fa")
+	)
+	(wire
+		(pts
+			(xy 138.43 104.14) (xy 138.43 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116cc25c-2730-4614-bb9f-1a0b53533260")
+	)
+	(wire
+		(pts
+			(xy 138.43 88.9) (xy 172.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1624a1b9-8cdd-4566-a89d-b72f6304b01f")
+	)
+	(wire
+		(pts
+			(xy 193.04 74.93) (xy 190.5 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24130d5d-11b0-44c6-b42e-7b2533d0e7ee")
+	)
+	(wire
+		(pts
+			(xy 172.72 73.66) (xy 168.91 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441a3250-b345-49da-8d24-b140d43922b2")
+	)
+	(wire
+		(pts
+			(xy 176.53 73.66) (xy 172.72 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e9d40c4-7a65-4664-bbf0-4e7593f98344")
+	)
+	(wire
+		(pts
+			(xy 171.45 76.2) (xy 168.91 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5086e617-b0aa-4c27-be42-936d30c87339")
+	)
+	(wire
+		(pts
+			(xy 132.08 78.74) (xy 138.43 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51df014e-ae59-4c9e-98ea-055adbeaafcd")
+	)
+	(wire
+		(pts
+			(xy 147.32 106.68) (xy 137.16 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b1f0438-3480-4df3-9ec7-9aaacd176a0e")
+	)
+	(wire
+		(pts
+			(xy 193.04 69.85) (xy 175.26 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f3e9de7-2cc2-4e87-9a49-560ffbc6a614")
+	)
+	(wire
+		(pts
+			(xy 173.99 87.63) (xy 173.99 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f7408ce-1fbf-4ed0-985a-0a5d701b0937")
+	)
+	(wire
+		(pts
+			(xy 132.08 76.2) (xy 132.08 78.74)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "60bdd9d9-e45a-40a7-8800-120e040d054b")
+	)
+	(wire
+		(pts
+			(xy 139.7 90.17) (xy 139.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7465a597-02ff-469d-8d5f-7f088f00c3f9")
+	)
+	(wire
+		(pts
+			(xy 175.26 78.74) (xy 168.91 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ccdc7cd-9fab-4010-ae72-2c1b9a2d2916")
+	)
+	(wire
+		(pts
+			(xy 190.5 72.39) (xy 193.04 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "992cda1d-899d-4a6b-ad91-23962cf9d9c8")
+	)
+	(wire
+		(pts
+			(xy 154.94 101.6) (xy 161.29 101.6)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(uuid "99dd47e6-729c-41ef-8593-5c46671b8306")
+	)
+	(wire
+		(pts
+			(xy 138.43 66.04) (xy 132.08 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2a191e1-63e4-4095-a83c-e6f36a804b89")
+	)
+	(wire
+		(pts
+			(xy 176.53 67.31) (xy 176.53 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f3b63e-da53-4bfa-89f2-b607740c97aa")
+	)
+	(wire
+		(pts
+			(xy 154.94 106.68) (xy 161.29 106.68)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 8 0 0 1)
+		)
+		(uuid "a59d7070-004b-41b4-b9c8-518a5d5f8962")
+	)
+	(wire
+		(pts
+			(xy 154.94 104.14) (xy 175.26 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab1b99b-ca87-4f5b-9060-9822b77a9035")
+	)
+	(wire
+		(pts
+			(xy 172.72 88.9) (xy 172.72 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab684908-4216-434f-9db8-9c910c4db70d")
+	)
+	(wire
+		(pts
+			(xy 137.16 106.68) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b50ed4c8-5346-4af2-bc3c-d0f3ec820c6a")
+	)
+	(wire
+		(pts
+			(xy 175.26 104.14) (xy 175.26 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b52afc15-607b-4a5b-acac-441aed284f99")
+	)
+	(wire
+		(pts
+			(xy 171.45 90.17) (xy 171.45 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b62991ba-61fb-48d2-bab3-a3c236fc3701")
+	)
+	(wire
+		(pts
+			(xy 137.16 87.63) (xy 173.99 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6af29e-dd85-4254-9c58-f745b035616c")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6bb2b40-9590-40d7-a7b3-df79ab09fdba")
+	)
+	(wire
+		(pts
+			(xy 139.7 90.17) (xy 171.45 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d99a40-8df7-44bf-bbf8-c482c56726ec")
+	)
+	(wire
+		(pts
+			(xy 190.5 74.93) (xy 190.5 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a8025b-9e37-4a24-84b6-8747570cdbee")
+	)
+	(wire
+		(pts
+			(xy 147.32 104.14) (xy 138.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3a09e68-525f-4ddb-99a1-d581b6a20b05")
+	)
+	(wire
+		(pts
+			(xy 173.99 66.04) (xy 168.91 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf2f644-947f-460b-9627-23f34505430b")
+	)
+	(wire
+		(pts
+			(xy 132.08 66.04) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0.254)
+			(type default)
+			(color 255 0 11 1)
+		)
+		(uuid "fe2b2c23-7daa-4d5e-96db-3d407339b885")
+	)
+	(text "alpha-001"
+		(exclude_from_sim no)
+		(at 273.812 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1175674a-4ff4-41b8-b714-609b509f0e8d")
+	)
+	(text "Plantifier - Ardunio Prototype"
+		(exclude_from_sim no)
+		(at 201.168 189.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2230a854-ff1a-492f-b03b-536e27116e70")
+	)
+	(text "07.07.2024\n"
+		(exclude_from_sim no)
+		(at 211.582 193.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "87833ee0-9d8a-48d4-a510-a9f3d4dbfd8e")
+	)
+	(text "Samuel"
+		(exclude_from_sim no)
+		(at 182.372 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8def5933-5dc5-4471-9e6a-2e75e1cea87c")
+	)
+	(text "Patrick"
+		(exclude_from_sim no)
+		(at 182.118 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e98e8aa4-7453-4ca5-914e-97bbafce6718")
 	)
 	(symbol
-		(lib_id "MCU_Module:Arduino_UNO_R2")
-		(at 76.2 87.63 0)
+		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:JST-SH-4P-1.0")
+		(at 198.12 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "01e353c5-80a8-4c86-bbb3-5c115410e256")
+		(property "Reference" "J1"
+			(at 205.74 74.93 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Value" "~"
+			(at 194.31 64.77 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm"
+			(at 198.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "5977138b-5e55-42d3-bc96-9aa410496f3a")
+		)
+		(pin "NC1"
+			(uuid "31766fcd-74bf-4ec9-8c4b-f807b9e255a8")
+		)
+		(pin "NC2"
+			(uuid "b6fb7cd5-607f-44dd-9c9e-92462386c216")
+		)
+		(pin "2"
+			(uuid "d8f8a82f-c509-44b6-bbb9-3204041a8386")
+		)
+		(pin "4"
+			(uuid "76e029d9-b374-4dde-b15f-08828bddd948")
+		)
+		(pin "1"
+			(uuid "8ebef1aa-3dbd-4129-859d-d3dc95c1fbc4")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:PINHD-2X3")
+		(at 149.86 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bbe03095-7124-4114-8f3b-868f5f14f3fd")
-		(property "Reference" "A1"
-			(at 83.4741 59.69 0)
+		(uuid "239946b9-2dbe-4abb-9cfe-a62aedfbf5ec")
+		(property "Reference" "JP1"
+			(at 151.13 95.25 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.778 1.5113)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Arduino_UNO_R2"
-			(at 83.4741 62.23 0)
+		(property "Value" "~"
+			(at 151.13 97.79 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.778 1.5113)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Module:Arduino_UNO_R2"
-			(at 76.2 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
-			(at 76.2 87.63 0)
+		(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:2X03"
+			(at 149.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,8 +1632,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Arduino UNO Microcontroller Module, release 2"
-			(at 76.2 87.63 0)
+		(property "Datasheet" ""
+			(at 149.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -706,100 +1641,730 @@
 				(hide yes)
 			)
 		)
-		(pin "13"
-			(uuid "6416500f-82b0-4103-8e85-c5d56f09465f")
-		)
-		(pin "23"
-			(uuid "2dec45d8-c376-4b22-82fc-6d4531e0dc75")
-		)
-		(pin "29"
-			(uuid "992973b2-ab4a-41be-bc42-c85998ec441e")
-		)
-		(pin "3"
-			(uuid "0bcc8f26-e133-4e01-9563-9c4edcffd485")
-		)
-		(pin "5"
-			(uuid "94f1d11a-d32d-4e11-b810-5c1edbd86705")
-		)
-		(pin "6"
-			(uuid "6de992bc-beb6-49e9-9cac-890ef60901b3")
-		)
-		(pin "7"
-			(uuid "4d796665-9b8b-41b5-906c-091b40b5df93")
-		)
-		(pin "10"
-			(uuid "b16ffe25-775a-49a4-b54e-4073faeb17dc")
-		)
-		(pin "25"
-			(uuid "f99419a1-d049-406f-a5d8-fab1341b6afb")
-		)
-		(pin "2"
-			(uuid "31db3923-c7c3-4ee4-9d1a-8e2c25575e82")
-		)
-		(pin "28"
-			(uuid "f3cbd224-ff71-4d79-a795-eae2414f9a0f")
-		)
-		(pin "24"
-			(uuid "d7c13ef7-9cac-45cb-be4c-9e625a9afde1")
-		)
-		(pin "27"
-			(uuid "0ad37328-ff77-48a9-b613-6e59fdf1e2a3")
-		)
-		(pin "11"
-			(uuid "3af831ad-4f49-4f77-9e81-32ca868033bb")
-		)
-		(pin "12"
-			(uuid "1ad6fb33-62d2-4d8b-9619-58510aa8c8d6")
-		)
-		(pin "22"
-			(uuid "7a04da1b-7a1d-4437-94a6-464d9c79a909")
-		)
-		(pin "17"
-			(uuid "b9c33359-3adc-4dd2-940a-33172719c64e")
-		)
-		(pin "20"
-			(uuid "01e019d6-7ce6-42dc-8006-39a1d9db6a55")
-		)
-		(pin "9"
-			(uuid "498476d8-99bf-4274-8278-4d279f791b02")
-		)
-		(pin "1"
-			(uuid "6742b0de-3386-4b42-b216-d6bcbfab8505")
+		(property "Description" "PIN HEADER"
+			(at 149.86 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "4"
-			(uuid "7abaeec5-361b-40cb-92fd-636a292b587f")
+			(uuid "41af6a86-e6d2-43b5-b834-dd4374eedc7e")
 		)
-		(pin "15"
-			(uuid "c9526e0f-93c9-4d4f-bfb8-02d292ba50d6")
+		(pin "1"
+			(uuid "c1b7cca1-2fa6-4179-b3ab-e38aa9de57be")
 		)
-		(pin "19"
-			(uuid "9f3f62c7-1523-4e8b-bf80-303e72905717")
+		(pin "5"
+			(uuid "5b793aaf-9e44-4dcc-9cbe-e2d08f0f6af4")
 		)
-		(pin "16"
-			(uuid "f132e299-9fca-49aa-805b-f3afece4ba92")
+		(pin "2"
+			(uuid "debed23d-42de-4eef-86ab-55ac1afb8cd8")
 		)
-		(pin "21"
-			(uuid "801969c9-379d-4e11-bab0-caa6948f314a")
+		(pin "3"
+			(uuid "86453c07-ead6-4b7e-bc0c-9b7c2ecc0947")
 		)
-		(pin "30"
-			(uuid "202d9d31-8d50-45d7-b2b9-1827b1033716")
-		)
-		(pin "14"
-			(uuid "55b5934c-6eba-4499-bd99-a1abe09728b5")
-		)
-		(pin "18"
-			(uuid "5134ed04-9198-4b2b-b66d-acc5ab15ddb1")
-		)
-		(pin "8"
-			(uuid "9325beea-8ba9-4d80-ab6e-8a7a42e27389")
-		)
-		(pin "26"
-			(uuid "29c0835c-7fe2-48a7-8a10-0fa830e0f019")
+		(pin "6"
+			(uuid "656c65d4-691a-4803-bdde-0098a5e07637")
 		)
 		(instances
 			(project ""
 				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "A1")
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:C-0201")
+		(at 132.08 72.39 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "239a4554-a016-47bb-8eb8-60a04081a49a")
+		(property "Reference" "C1"
+			(at 132.461 68.072 0)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Value" "~"
+			(at 132.461 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.0795)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "919765c5-4446-4a8b-bcba-5a535609664c")
+		)
+		(pin "2"
+			(uuid "2901764b-3f91-4300-ac6b-ef2bd5345290")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 132.08 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29a11b19-e4ee-4d06-bb79-c938ed260458")
+		(property "Reference" "#PWR01"
+			(at 132.08 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 132.08 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 132.08 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "889f3c0e-342b-4e4d-890d-004faee47694")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 198.12 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fdb88e9-19ba-47fd-879e-1d2a8401e1de")
+		(property "Reference" "#PWR05"
+			(at 198.12 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 198.12 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 198.12 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "856ab176-5dc4-4d59-bfd1-6a6ff3eb2a91")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 190.5 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d0dfe36-2878-4617-a474-cf23e84a002b")
+		(property "Reference" "#PWR08"
+			(at 194.31 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 186.69 72.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 190.5 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "838add81-2c40-43c7-84a9-c1ef8012b06a")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 132.08 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7379d09e-f9c2-4b0b-9941-d8ccc3d80f94")
+		(property "Reference" "#PWR02"
+			(at 132.08 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 132.08 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 132.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88d735f1-2f66-407b-8e57-263d2d3c6616")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 161.29 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8eac402e-37e3-4509-b94a-010f1421537d")
+		(property "Reference" "#PWR03"
+			(at 157.48 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 165.1 101.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3294166-b6e6-4ad4-a891-b10d28496b8b")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:ATTINY85-ARDUINOTINY85-20-SMT")
+		(at 153.67 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8776f7d-aefd-4233-8a09-56d5c6805530")
+		(property "Reference" "U1"
+			(at 140.97 63.246 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Value" "~"
+			(at 140.97 81.534 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Atmel 8-pin 2/4/8kB flash uC"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa8b5f19-b8d0-4a2d-ae24-d747fd46e756")
+		)
+		(pin "8"
+			(uuid "19848e26-bd2a-4795-a737-304c8073c615")
+		)
+		(pin "3"
+			(uuid "a38b32e9-35c9-419e-be53-4769437c634a")
+		)
+		(pin "2"
+			(uuid "4a00409a-9bc1-4eff-bcf5-801dae33abdb")
+		)
+		(pin "5"
+			(uuid "7dc70c11-232e-4c5c-8df6-5177fe0602c7")
+		)
+		(pin "7"
+			(uuid "e379fc6f-5c85-4f27-9a7b-bcbfe7198f47")
+		)
+		(pin "6"
+			(uuid "d0aedea6-a613-40ca-8169-de6e564a4799")
+		)
+		(pin "4"
+			(uuid "26a7afc8-a4f1-4e5e-9040-437ccff3f7ad")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 161.29 106.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e098eb19-4537-4848-bb68-f02cfa9c9de4")
+		(property "Reference" "#PWR04"
+			(at 167.64 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 165.1 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbe4c924-153a-426f-84d7-ad6e971fdece")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 190.5 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5be03e1-4e19-4a5d-b790-9433747f063d")
+		(property "Reference" "#PWR07"
+			(at 190.5 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 190.5 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b6d0ff2-640a-4c42-b79f-9b0b184a10f0")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:Earth")
+		(at 198.12 62.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef7e30e9-b528-4ced-9f57-0d0be4145e22")
+		(property "Reference" "#PWR06"
+			(at 198.12 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Earth"
+			(at 198.12 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 198.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f892d86-d277-4b3b-8087-03aa85e62a1e")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
