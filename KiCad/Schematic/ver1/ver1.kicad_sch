@@ -5,31 +5,208 @@
 	(uuid "7dc9043a-ef1d-4623-9acc-dd1f81d56424")
 	(paper "A4")
 	(lib_symbols
-		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:ATTINY85-ARDUINOTINY85-20-SMT"
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -12.7 10.414 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MCU_Module:Arduino_Nano_v2.x"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "A"
+				(at -10.16 23.495 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(justify left bottom)
-					(hide yes)
 				)
 			)
-			(property "Value" ""
-				(at -12.7 -7.874 0)
+			(property "Value" "Arduino_Nano_v2.x"
+				(at 5.08 -24.13 0)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
 					(justify left top)
+				)
+			)
+			(property "Footprint" "Module:Arduino_Nano"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
 					(hide yes)
 				)
 			)
-			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU"
+			(property "Datasheet" "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -38,7 +215,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Description" "Arduino Nano v2.x"
 				(at 0 0 0)
 				(effects
 					(font
@@ -47,7 +224,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Atmel 8-pin 2/4/8kB flash uC"
+			(property "ki_keywords" "Arduino nano microcontroller module USB"
 				(at 0 0 0)
 				(effects
 					(font
@@ -56,67 +233,33 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "ki_fp_filters" "Arduino*Nano*"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "ATTINY85-ARDUINOTINY85-20-SMT_1_0"
-				(polyline
-					(pts
-						(xy -12.7 -7.62) (xy -12.7 10.16)
-					)
+			(symbol "Arduino_Nano_v2.x_0_1"
+				(rectangle
+					(start -10.16 22.86)
+					(end 10.16 -22.86)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -12.7 10.16) (xy 12.7 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -7.62) (xy -12.7 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 10.16) (xy 12.7 -7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "Arduino_Nano_v2.x_1_1"
 				(pin bidirectional line
-					(at 15.24 7.62 180)
+					(at -12.7 12.7 0)
 					(length 2.54)
-					(name "(~{RESET}/A0)5"
+					(name "D1/TX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -132,9 +275,189 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 2.54 180)
+					(at -12.7 -2.54 0)
 					(length 2.54)
-					(name "(A3)3"
+					(name "D7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "D8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "D9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "D10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -12.7 0)
+					(length 2.54)
+					(name "D11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -15.24 0)
+					(length 2.54)
+					(name "D12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -17.78 0)
+					(length 2.54)
+					(name "D13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 2.54 25.4 270)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "AREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 15.24 0)
+					(length 2.54)
+					(name "D0/RX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -150,9 +473,189 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 5.08 180)
+					(at 12.7 -2.54 180)
 					(length 2.54)
-					(name "~{(A2})4"
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -12.7 180)
+					(length 2.54)
+					(name "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -15.24 180)
+					(length 2.54)
+					(name "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -17.78 180)
+					(length 2.54)
+					(name "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 5.08 25.4 270)
+					(length 2.54)
+					(name "+5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 15.24 180)
+					(length 2.54)
+					(name "~{RESET}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -25.4 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 12.7 180)
+					(length 2.54)
+					(name "~{RESET}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -167,8 +670,26 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -15.24 -5.08 0)
+				(pin power_in line
+					(at -2.54 25.4 270)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -25.4 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -186,9 +707,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -5.08 180)
+					(at -12.7 10.16 0)
 					(length 2.54)
-					(name "~{(SDA/MOSI})0"
+					(name "D2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -204,9 +725,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 -2.54 180)
+					(at -12.7 7.62 0)
 					(length 2.54)
-					(name "~{(MISO})1"
+					(name "D3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -222,9 +743,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 15.24 0 180)
+					(at -12.7 5.08 0)
 					(length 2.54)
-					(name "(SCL/SCK/A1)2"
+					(name "D4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -240,9 +761,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -15.24 7.62 0)
+					(at -12.7 2.54 0)
 					(length 2.54)
-					(name "VCC"
+					(name "D5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -257,33 +778,49 @@
 						)
 					)
 				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "D6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
-		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:C-0201"
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:100OHM-1/4W-5%(0603)"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "C"
-				(at -4.318 0.381 0)
+			(property "Reference" "R"
+				(at -3.81 1.4986 0)
 				(effects
 					(font
-						(size 1.27 1.0795)
+						(size 1.778 1.5113)
 					)
 					(justify left bottom)
-					(hide yes)
 				)
 			)
 			(property "Value" ""
-				(at 1.27 0.381 0)
+				(at -3.81 -3.302 0)
 				(effects
 					(font
-						(size 1.27 1.0795)
+						(size 1.778 1.5113)
 					)
 					(justify left bottom)
-					(hide yes)
 				)
 			)
-			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:C0201"
+			(property "Footprint" "SparkFun_Soil_Moisture_Sensor:0603-RES"
 				(at 0 0 0)
 				(effects
 					(font
@@ -318,10 +855,10 @@
 					)
 				)
 			)
-			(symbol "C-0201_1_0"
+			(symbol "100OHM-1/4W-5%(0603)_1_0"
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.635 0)
+						(xy -2.54 0) (xy -2.159 1.016)
 					)
 					(stroke
 						(width 0.1524)
@@ -333,43 +870,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 -1.27) (xy -0.635 0)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0) (xy -0.635 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 0.635 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 1.27 0)
+						(xy -2.159 1.016) (xy -1.524 -1.016)
 					)
 					(stroke
 						(width 0.1524)
@@ -381,10 +882,82 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.27) (xy 0.635 0)
+						(xy -1.524 -1.016) (xy -0.889 1.016)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.016) (xy 0.381 1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 1.016) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy 1.651 1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 1.016) (xy 2.286 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.016) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.1524)
 						(type solid)
 					)
 					(fill
@@ -392,7 +965,7 @@
 					)
 				)
 				(pin passive line
-					(at -3.81 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -410,7 +983,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -429,31 +1002,30 @@
 				)
 			)
 		)
-		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:JST-SH-4P-1.0"
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:GND"
+			(power)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at -3.81 -7.62 0)
+			(property "Reference" "#GND"
+				(at 0 0 0)
 				(effects
 					(font
-						(size 1.778 1.5113)
+						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
 			(property "Value" ""
-				(at 6.35 3.81 0)
+				(at -2.54 -2.54 0)
 				(effects
 					(font
 						(size 1.778 1.5113)
 					)
 					(justify left bottom)
-					(hide yes)
 				)
 			)
-			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:JST-SH-4P"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -471,7 +1043,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "SUPPLY SYMBOL"
 				(at 0 0 0)
 				(effects
 					(font
@@ -488,156 +1060,30 @@
 					)
 				)
 			)
-			(symbol "JST-SH-4P-1.0_1_0"
+			(symbol "GND_1_0"
 				(polyline
 					(pts
-						(xy -6.35 -5.08) (xy -6.35 2.54)
+						(xy -1.905 0) (xy 1.905 0)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type solid)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -6.35 2.54) (xy 6.35 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -5.08) (xy -6.35 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 2.54) (xy 6.35 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin bidirectional line
-					(at -3.81 5.08 270)
+				(pin power_in line
+					(at 0 2.54 270)
 					(length 2.54)
 					(name "GND"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0 0)
 							)
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -1.27 5.08 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 1.27 5.08 270)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 3.81 5.08 270)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -8.89 0 0)
-					(length 2.54)
-					(name "5"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "NC1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "6"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "NC2"
 						(effects
 							(font
 								(size 0 0)
@@ -647,12 +1093,12 @@
 				)
 			)
 		)
-		(symbol "SparkFun Qwiic Soil Moisture Sensor-eagle-import:PINHD-2X3"
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:M03POLAR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "JP"
-				(at -6.35 5.715 0)
+				(at -2.54 5.842 0)
 				(effects
 					(font
 						(size 1.778 1.5113)
@@ -661,7 +1107,7 @@
 				)
 			)
 			(property "Value" ""
-				(at -6.35 -7.62 0)
+				(at -2.54 -7.62 0)
 				(effects
 					(font
 						(size 1.778 1.5113)
@@ -669,7 +1115,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:2X03"
+			(property "Footprint" "SparkFun_Soil_Moisture_Sensor:MOLEX-1X3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -687,7 +1133,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "PIN HEADER"
+			(property "Description" "Header 3 Standard 3-pin 0.1\" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."
 				(at 0 0 0)
 				(effects
 					(font
@@ -704,10 +1150,10 @@
 					)
 				)
 			)
-			(symbol "PINHD-2X3_1_0"
+			(symbol "M03POLAR_1_0"
 				(polyline
 					(pts
-						(xy -6.35 -5.08) (xy 8.89 -5.08)
+						(xy -2.54 5.08) (xy -2.54 -5.08)
 					)
 					(stroke
 						(width 0.4064)
@@ -719,7 +1165,7 @@
 				)
 				(polyline
 					(pts
-						(xy -6.35 5.08) (xy -6.35 -5.08)
+						(xy -2.54 5.08) (xy 3.81 5.08)
 					)
 					(stroke
 						(width 0.4064)
@@ -731,7 +1177,43 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 -5.08) (xy 8.89 5.08)
+						(xy 1.27 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.08) (xy -2.54 -5.08)
 					)
 					(stroke
 						(width 0.4064)
@@ -743,7 +1225,7 @@
 				)
 				(polyline
 					(pts
-						(xy 8.89 5.08) (xy -6.35 5.08)
+						(xy 3.81 -5.08) (xy 3.81 5.08)
 					)
 					(stroke
 						(width 0.4064)
@@ -753,9 +1235,9 @@
 						(type none)
 					)
 				)
-				(pin passive inverted
-					(at -2.54 2.54 0)
-					(length 2.54)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
 					(name "1"
 						(effects
 							(font
@@ -771,9 +1253,9 @@
 						)
 					)
 				)
-				(pin passive inverted
-					(at 5.08 2.54 180)
-					(length 2.54)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
 					(name "2"
 						(effects
 							(font
@@ -789,9 +1271,9 @@
 						)
 					)
 				)
-				(pin passive inverted
-					(at -2.54 0 0)
-					(length 2.54)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
 					(name "3"
 						(effects
 							(font
@@ -807,17 +1289,161 @@
 						)
 					)
 				)
-				(pin passive inverted
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "4"
+			)
+		)
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:M03SCREW_LOCK"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -2.54 5.842 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at -2.54 -7.62 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SparkFun_Soil_Moisture_Sensor:SCREWTERMINAL-3.5MM-3_LOCK.007S"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Header 3 Standard 3-pin 0.1\" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "M03SCREW_LOCK_1_0"
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.6096)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.08) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -5.08) (xy 3.81 5.08)
+					)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 5.08)
+					(name "1"
 						(effects
 							(font
 								(size 0 0)
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -825,17 +1451,17 @@
 						)
 					)
 				)
-				(pin passive inverted
-					(at -2.54 -2.54 0)
-					(length 2.54)
-					(name "5"
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "2"
 						(effects
 							(font
 								(size 0 0)
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -843,17 +1469,17 @@
 						)
 					)
 				)
-				(pin passive inverted
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "6"
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 5.08)
+					(name "3"
 						(effects
 							(font
 								(size 0 0)
 							)
 						)
 					)
-					(number "6"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -863,7 +1489,355 @@
 				)
 			)
 		)
-		(symbol "power:+3.3V"
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:TRANSISTOR_NPNMMBT2222A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" ""
+				(at 5.08 -2.54 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SparkFun_Soil_Moisture_Sensor:SOT23-3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic NPN BJT\n\nMMBT2222A - TRANS-08049 (SOT-23, 1A 40V)\nMPSA42 - TRANS-09116 (SOT-23, 500mA 300V)\nMMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)\n\n•      BC547 -      http://www.sparkfun.com/products/8928 COM-08928     (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)\n•      2N3904 -      http://www.sparkfun.com/products/521 COM-00521     (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)\n•      P2N2222A -      http://www.sparkfun.com/products/12852 COM-12852     (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TRANSISTOR_NPNMMBT2222A_1_0"
+				(rectangle
+					(start -0.254 -2.54)
+					(end 0.508 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -1.524)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -2.413) (xy 2.286 -2.413)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -2.286) (xy 1.905 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.54 -2.04) (xy 0.308 -1.424)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -1.778) (xy 1.524 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 -1.524) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -2.286) (xy 1.778 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.413) (xy 1.778 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 0.508 1.524)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SparkFun_Soil_Moisture_Sensor-eagle-import:VCC"
+			(power)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#SUPPLY"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" ""
+				(at -1.016 3.556 0)
+				(effects
+					(font
+						(size 1.778 1.5113)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SUPPLY SYMBOL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VCC_1_0"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 90)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:-5V"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -880,7 +1854,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "-5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -906,7 +1880,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"-5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -924,45 +1898,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
+			(symbol "-5V_0_0"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -982,8 +1918,22 @@
 					)
 				)
 			)
+			(symbol "-5V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
 		)
-		(symbol "power:Earth"
+		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -1000,7 +1950,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "Earth"
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(effects
 					(font
@@ -1017,7 +1967,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1026,7 +1976,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1035,7 +1985,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "global ground gnd"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1044,46 +1994,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Earth_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1094,7 +2008,7 @@
 					)
 				)
 			)
-			(symbol "Earth_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -1117,352 +2031,408 @@
 		)
 	)
 	(junction
-		(at 175.26 78.74)
+		(at 100.33 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3ddb0342-7f01-445e-a73a-ed5e5e0a4047")
+		(uuid "70aeffda-d928-45e8-9346-6e0f3176eaa4")
 	)
 	(junction
-		(at 132.08 78.74)
+		(at 161.29 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "465d23c8-54af-4c33-b848-2e4b6cf9138c")
-	)
-	(junction
-		(at 132.08 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8516b69d-063b-4f7c-bd4c-de4cd163200b")
-	)
-	(junction
-		(at 172.72 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa673707-1507-4b44-b7d4-0a6bea7297d9")
+		(uuid "8cb771a9-e476-424d-a29f-ab7b4b477f31")
 	)
 	(wire
 		(pts
-			(xy 175.26 69.85) (xy 175.26 78.74)
+			(xy 116.84 110.49) (xy 137.16 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "034a34e3-107b-4cbf-b83f-40ca0cb5fb77")
+		(uuid "07ccc8a3-a9e8-425a-926d-ca45e60f13d2")
 	)
 	(wire
 		(pts
-			(xy 193.04 67.31) (xy 176.53 67.31)
+			(xy 130.81 60.96) (xy 133.35 60.96)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "0c51c656-aea6-4fde-8de5-da785820ea1f")
+	)
+	(wire
+		(pts
+			(xy 97.79 128.27) (xy 100.33 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "05e183ba-8470-4414-bb55-a81c3e7f84fa")
+		(uuid "0f5ced05-5fce-4969-93d4-0d9faf589281")
 	)
 	(wire
 		(pts
-			(xy 138.43 104.14) (xy 138.43 88.9)
+			(xy 161.29 74.93) (xy 151.13 74.93)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "11ec6966-b69a-439f-9a34-4bd8d2e9676b")
+	)
+	(wire
+		(pts
+			(xy 119.38 109.22) (xy 101.6 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "116cc25c-2730-4614-bb9f-1a0b53533260")
+		(uuid "1a581bfd-ac68-4b22-90df-884389f57588")
 	)
 	(wire
 		(pts
-			(xy 138.43 88.9) (xy 172.72 88.9)
+			(xy 124.46 60.96) (xy 116.84 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1624a1b9-8cdd-4566-a89d-b72f6304b01f")
+		(uuid "261eb56c-91f8-4546-b24e-d60b08b4ebbd")
 	)
 	(wire
 		(pts
-			(xy 193.04 74.93) (xy 190.5 74.93)
+			(xy 133.35 63.5) (xy 130.81 63.5)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "285974d2-83fa-49a7-bf3e-92d8d2031f4f")
+	)
+	(wire
+		(pts
+			(xy 100.33 66.04) (xy 95.25 66.04)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "2a031646-671d-4a84-ae81-50eed241dbe8")
+	)
+	(wire
+		(pts
+			(xy 100.33 107.95) (xy 100.33 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24130d5d-11b0-44c6-b42e-7b2533d0e7ee")
+		(uuid "2a0f6484-79d4-4964-89de-3783048c64de")
 	)
 	(wire
 		(pts
-			(xy 172.72 73.66) (xy 168.91 73.66)
+			(xy 181.61 67.31) (xy 181.61 54.61)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "336fbb0f-fb28-4c77-bb83-268c202aae84")
+	)
+	(wire
+		(pts
+			(xy 97.79 60.96) (xy 97.79 58.42)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "358fe791-a4d6-4e6d-bd61-d48a144dd914")
+	)
+	(wire
+		(pts
+			(xy 161.29 90.17) (xy 161.29 87.63)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "4a792b18-4edf-4096-ba36-ef80c946366c")
+	)
+	(wire
+		(pts
+			(xy 124.46 63.5) (xy 118.11 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "441a3250-b345-49da-8d24-b140d43922b2")
+		(uuid "50cb3bf7-417f-4b3a-9063-00a8daa1d758")
 	)
 	(wire
 		(pts
-			(xy 176.53 73.66) (xy 172.72 73.66)
+			(xy 137.16 110.49) (xy 137.16 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e9d40c4-7a65-4664-bbf0-4e7593f98344")
+		(uuid "52bda33b-a9d0-4565-98dd-2e8516cebe9d")
 	)
 	(wire
 		(pts
-			(xy 171.45 76.2) (xy 168.91 76.2)
+			(xy 161.29 74.93) (xy 161.29 69.85)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "5490f735-ffdb-43f9-a736-1c5ac4e946e2")
+	)
+	(wire
+		(pts
+			(xy 100.33 60.96) (xy 97.79 60.96)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "550b08ac-c234-4d82-862f-5ef7ed26e399")
+	)
+	(wire
+		(pts
+			(xy 161.29 54.61) (xy 161.29 59.69)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "68c53bb6-b769-4ff0-9435-c8d782ef14f9")
+	)
+	(wire
+		(pts
+			(xy 132.08 144.78) (xy 132.08 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5086e617-b0aa-4c27-be42-936d30c87339")
+		(uuid "6e0d0ed6-a86f-48b7-a793-8bd75f289412")
 	)
 	(wire
 		(pts
-			(xy 132.08 78.74) (xy 138.43 78.74)
+			(xy 118.11 63.5) (xy 118.11 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "51df014e-ae59-4c9e-98ea-055adbeaafcd")
+		(uuid "774ce90c-e630-45ff-8b64-3bda9f7493ea")
 	)
 	(wire
 		(pts
-			(xy 147.32 106.68) (xy 137.16 106.68)
+			(xy 118.11 107.95) (xy 100.33 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5b1f0438-3480-4df3-9ec7-9aaacd176a0e")
+		(uuid "8101318d-d452-4c83-96a9-4376d2ddf6fa")
 	)
 	(wire
 		(pts
-			(xy 193.04 69.85) (xy 175.26 69.85)
+			(xy 97.79 63.5) (xy 97.79 68.58)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "8428d5f7-e3b2-4fc5-9c4a-99101aa898a6")
+	)
+	(wire
+		(pts
+			(xy 116.84 60.96) (xy 116.84 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f3e9de7-2cc2-4e87-9a49-560ffbc6a614")
+		(uuid "8666a9ec-bccc-49ad-bab5-5f252e690378")
 	)
 	(wire
 		(pts
-			(xy 173.99 87.63) (xy 173.99 66.04)
+			(xy 100.33 128.27) (xy 106.68 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5f7408ce-1fbf-4ed0-985a-0a5d701b0937")
+		(uuid "87891943-1260-48c8-bb1a-ed1d440de6b0")
 	)
 	(wire
 		(pts
-			(xy 132.08 76.2) (xy 132.08 78.74)
+			(xy 133.35 68.58) (xy 133.35 63.5)
 		)
 		(stroke
-			(width 0.254)
-			(type default)
-			(color 0 0 0 1)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "60bdd9d9-e45a-40a7-8800-120e040d054b")
+		(uuid "93736285-d284-46a2-b1ef-3d72503f5ef3")
 	)
 	(wire
 		(pts
-			(xy 139.7 90.17) (xy 139.7 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7465a597-02ff-469d-8d5f-7f088f00c3f9")
-	)
-	(wire
-		(pts
-			(xy 175.26 78.74) (xy 168.91 78.74)
+			(xy 124.46 66.04) (xy 119.38 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ccdc7cd-9fab-4010-ae72-2c1b9a2d2916")
+		(uuid "b02d5928-2ee8-407f-aa66-0b161f4f6813")
 	)
 	(wire
 		(pts
-			(xy 190.5 72.39) (xy 193.04 72.39)
+			(xy 100.33 63.5) (xy 97.79 63.5)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "b6500fde-f9f1-4692-8209-9fc5fc2e62e1")
+	)
+	(wire
+		(pts
+			(xy 101.6 144.78) (xy 132.08 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "992cda1d-899d-4a6b-ad91-23962cf9d9c8")
+		(uuid "c6c7fcd5-5ad6-43e3-af3d-c20dfd0e9e82")
 	)
 	(wire
 		(pts
-			(xy 154.94 101.6) (xy 161.29 101.6)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 255 0 11 1)
-		)
-		(uuid "99dd47e6-729c-41ef-8593-5c46671b8306")
-	)
-	(wire
-		(pts
-			(xy 138.43 66.04) (xy 132.08 66.04)
+			(xy 101.6 109.22) (xy 101.6 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2a191e1-63e4-4095-a83c-e6f36a804b89")
+		(uuid "cfcd4690-dd2e-43c4-b0e8-0e40a6de521c")
 	)
 	(wire
 		(pts
-			(xy 176.53 67.31) (xy 176.53 73.66)
+			(xy 119.38 66.04) (xy 119.38 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2f3b63e-da53-4bfa-89f2-b607740c97aa")
+		(uuid "dd32f2e6-d85f-4912-b4cd-5d3344b71ebd")
 	)
 	(wire
 		(pts
-			(xy 154.94 106.68) (xy 161.29 106.68)
+			(xy 181.61 77.47) (xy 181.61 92.71)
 		)
 		(stroke
-			(width 0.254)
-			(type default)
-			(color 8 0 0 1)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "a59d7070-004b-41b4-b9c8-518a5d5f8962")
+		(uuid "e078ce08-03fe-4a96-8640-1b0c6930e8bd")
 	)
 	(wire
 		(pts
-			(xy 154.94 104.14) (xy 175.26 104.14)
+			(xy 181.61 92.71) (xy 186.69 92.71)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "aab1b99b-ca87-4f5b-9060-9822b77a9035")
+		(uuid "e47a3eec-6450-443d-97f8-838ab0c8651d")
 	)
 	(wire
 		(pts
-			(xy 172.72 88.9) (xy 172.72 73.66)
+			(xy 130.81 66.04) (xy 135.89 66.04)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "ab684908-4216-434f-9db8-9c910c4db70d")
+		(uuid "e667cede-6de2-419d-8f39-5934e9f0b0c2")
 	)
 	(wire
 		(pts
-			(xy 137.16 106.68) (xy 137.16 87.63)
+			(xy 156.21 64.77) (xy 151.13 64.77)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "b50ed4c8-5346-4af2-bc3c-d0f3ec820c6a")
+		(uuid "ea514e9b-54b7-4619-b54f-87ea99241b52")
 	)
 	(wire
 		(pts
-			(xy 175.26 104.14) (xy 175.26 78.74)
+			(xy 161.29 77.47) (xy 161.29 74.93)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "b52afc15-607b-4a5b-acac-441aed284f99")
+		(uuid "f46f0682-9ec3-4cfb-82fa-23f8a5fa9d52")
 	)
 	(wire
 		(pts
-			(xy 171.45 90.17) (xy 171.45 76.2)
+			(xy 133.35 60.96) (xy 133.35 58.42)
 		)
 		(stroke
-			(width 0)
-			(type default)
+			(width 0.1524)
+			(type solid)
 		)
-		(uuid "b62991ba-61fb-48d2-bab3-a3c236fc3701")
+		(uuid "fba285c5-dbb0-43ea-86c8-7130e96b98d6")
 	)
-	(wire
-		(pts
-			(xy 137.16 87.63) (xy 173.99 87.63)
-		)
+	(rectangle
+		(start 90.17 45.72)
+		(end 194.31 97.79)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ce6af29e-dd85-4254-9c58-f745b035616c")
-	)
-	(wire
-		(pts
-			(xy 139.7 101.6) (xy 147.32 101.6)
+		(fill
+			(type none)
 		)
+		(uuid 480f83b5-b6df-4006-b36b-b11b7319eb7b)
+	)
+	(text_box "int SoilSensor_val = 0; //value for storing moisture value \nint SoilSensor_soilPin = A0;//Declare a variable for the soil moisture sensor \nint SoilSensor_soilPower = 7;//Variable for Soil moisture Power"
+		(exclude_from_sim no)
+		(at 127 99.06 0)
+		(size 64.77 6.35)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6bb2b40-9590-40d7-a7b3-df79ab09fdba")
+		(fill
+			(type color)
+			(color 169 234 252 1)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "309c996b-fe4c-4c53-b520-d8a341701fbf")
 	)
-	(wire
-		(pts
-			(xy 139.7 90.17) (xy 171.45 90.17)
+	(text "SOIL SENSOR"
+		(exclude_from_sim yes)
+		(at 103.886 49.276 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1d99a40-8df7-44bf-bbf8-c482c56726ec")
-	)
-	(wire
-		(pts
-			(xy 190.5 74.93) (xy 190.5 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2a8025b-9e37-4a24-84b6-8747570cdbee")
-	)
-	(wire
-		(pts
-			(xy 147.32 104.14) (xy 138.43 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3a09e68-525f-4ddb-99a1-d581b6a20b05")
-	)
-	(wire
-		(pts
-			(xy 173.99 66.04) (xy 168.91 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbf2f644-947f-460b-9627-23f34505430b")
-	)
-	(wire
-		(pts
-			(xy 132.08 66.04) (xy 132.08 68.58)
-		)
-		(stroke
-			(width 0.254)
-			(type default)
-			(color 255 0 11 1)
-		)
-		(uuid "fe2b2c23-7daa-4d5e-96db-3d407339b885")
+		(uuid "1076ecd3-517a-4ddd-8b47-13344e18a965")
 	)
 	(text "alpha-001"
 		(exclude_from_sim no)
@@ -1514,201 +2484,88 @@
 		)
 		(uuid "e98e8aa4-7453-4ca5-914e-97bbafce6718")
 	)
-	(symbol
-		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:JST-SH-4P-1.0")
-		(at 198.12 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01e353c5-80a8-4c86-bbb3-5c115410e256")
-		(property "Reference" "J1"
-			(at 205.74 74.93 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
+	(label "PROBE1"
+		(at 151.13 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
 			)
+			(justify right bottom)
 		)
-		(property "Value" "~"
-			(at 194.31 64.77 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left bottom)
-				(hide yes)
+		(uuid "318b6db8-64a4-4b8e-a545-ee8f547f5a02")
+	)
+	(label "SIG"
+		(at 95.25 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
 			)
+			(justify right bottom)
 		)
-		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm"
-			(at 198.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "349f7930-252b-4f8d-aaa7-c32805a15bc5")
+	)
+	(label "SIG"
+		(at 135.89 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
 			)
+			(justify left bottom)
 		)
-		(property "Datasheet" ""
-			(at 198.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "570a59c8-fbee-4ba4-981a-4d11d7d7f3a3")
+	)
+	(label "SIG"
+		(at 151.13 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
 			)
+			(justify right bottom)
 		)
-		(property "Description" ""
-			(at 198.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "75948bbe-d068-4f33-a52a-3451c2194817")
+	)
+	(label "PROBE2"
+		(at 186.69 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
 			)
+			(justify left bottom)
 		)
-		(pin "3"
-			(uuid "5977138b-5e55-42d3-bc96-9aa410496f3a")
-		)
-		(pin "NC1"
-			(uuid "31766fcd-74bf-4ec9-8c4b-f807b9e255a8")
-		)
-		(pin "NC2"
-			(uuid "b6fb7cd5-607f-44dd-9c9e-92462386c216")
-		)
-		(pin "2"
-			(uuid "d8f8a82f-c509-44b6-bbb9-3204041a8386")
-		)
-		(pin "4"
-			(uuid "76e029d9-b374-4dde-b15f-08828bddd948")
-		)
-		(pin "1"
-			(uuid "8ebef1aa-3dbd-4129-859d-d3dc95c1fbc4")
-		)
-		(instances
-			(project ""
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "a2c51fe4-0048-45fb-b7d4-3b4886002b7d")
 	)
 	(symbol
-		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:PINHD-2X3")
-		(at 149.86 104.14 0)
+		(lib_id "Device:LED")
+		(at 193.04 127 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "239946b9-2dbe-4abb-9cfe-a62aedfbf5ec")
-		(property "Reference" "JP1"
-			(at 151.13 95.25 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 151.13 97.79 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-			)
-		)
-		(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:2X03"
-			(at 149.86 104.14 0)
+		(uuid "0896b903-8cc6-4661-b1a9-a5b37a42b108")
+		(property "Reference" "D2"
+			(at 208.28 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 149.86 104.14 0)
+		(property "Value" "LED YELLOW"
+			(at 212.852 127.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PIN HEADER"
-			(at 149.86 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "41af6a86-e6d2-43b5-b834-dd4374eedc7e")
-		)
-		(pin "1"
-			(uuid "c1b7cca1-2fa6-4179-b3ab-e38aa9de57be")
-		)
-		(pin "5"
-			(uuid "5b793aaf-9e44-4dcc-9cbe-e2d08f0f6af4")
-		)
-		(pin "2"
-			(uuid "debed23d-42de-4eef-86ab-55ac1afb8cd8")
-		)
-		(pin "3"
-			(uuid "86453c07-ead6-4b7e-bc0c-9b7c2ecc0947")
-		)
-		(pin "6"
-			(uuid "656c65d4-691a-4803-bdde-0098a5e07637")
-		)
-		(instances
-			(project ""
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:C-0201")
-		(at 132.08 72.39 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "239a4554-a016-47bb-8eb8-60a04081a49a")
-		(property "Reference" "C1"
-			(at 132.461 68.072 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Value" "~"
-			(at 132.461 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.0795)
-				)
-				(justify left bottom)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 72.39 0)
+			(at 193.04 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1716,8 +2573,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 132.08 72.39 0)
+		(property "Datasheet" "~"
+			(at 193.04 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1725,8 +2582,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 132.08 72.39 0)
+		(property "Description" "Light emitting diode"
+			(at 193.04 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1735,32 +2592,310 @@
 			)
 		)
 		(pin "1"
-			(uuid "919765c5-4446-4a8b-bcba-5a535609664c")
+			(uuid "4ac06ea9-d4fa-4e01-9fa4-6b3dc6a63522")
 		)
 		(pin "2"
-			(uuid "2901764b-3f91-4300-ac6b-ef2bd5345290")
+			(uuid "c3fe0eb8-d929-4d9e-a536-f080a892ed73")
 		)
 		(instances
-			(project ""
+			(project "ver1"
 				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "C1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 132.08 66.04 0)
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:M03SCREW_LOCK")
+		(at 123.19 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29a11b19-e4ee-4d06-bb79-c938ed260458")
+		(uuid "13b38604-1191-4c63-ba7a-6ddab1abfa3e")
+		(property "Reference" "JP2"
+			(at 120.65 57.658 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "M03SCREW_LOCK"
+			(at 120.65 71.12 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun_Soil_Moisture_Sensor:SCREWTERMINAL-3.5MM-3_LOCK.007S"
+			(at 123.19 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1c26615-70cd-4729-9e65-c94a588847b4")
+		)
+		(pin "2"
+			(uuid "69c8c1c1-d06c-46c3-8254-4b9c521983b0")
+		)
+		(pin "3"
+			(uuid "16ebdf0a-c6e7-45a5-888a-45eff8335a74")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 193.04 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1846e37c-52c9-41d3-954c-4539836b96dd")
+		(property "Reference" "D3"
+			(at 208.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED RED"
+			(at 211.328 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 193.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c957b47e-c0b9-4c5f-8487-f02a08682728")
+		)
+		(pin "2"
+			(uuid "ec32496e-6c53-452d-b130-6e9c59372900")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:TRANSISTOR_NPNMMBT2222A")
+		(at 158.75 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b02fbc7-9900-4cf0-9736-28d62fd9e195")
+		(property "Reference" "Q1"
+			(at 163.83 64.77 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TRANSISTOR_NPNMMBT2222A"
+			(at 163.83 67.31 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun_Soil_Moisture_Sensor:SOT23-3"
+			(at 158.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "745c9c74-2b4b-47f8-b021-2c17a3a86e4a")
+		)
+		(pin "3"
+			(uuid "eaab7bf1-e80e-49f4-9483-265ef609c5af")
+		)
+		(pin "2"
+			(uuid "f0f4801e-3da0-4fa5-83ba-560fcd447053")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:VCC")
+		(at 181.61 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "23ef5c23-7c7b-4c9f-9346-9b164ffc7f29")
+		(property "Reference" "#SUPPLY04"
+			(at 181.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 180.594 51.054 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d07c441-0eea-42bd-8fd8-563977bad4cc")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#SUPPLY04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.79 128.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ae312dc-8b8f-4f73-b635-906a3fb7fc1f")
 		(property "Reference" "#PWR01"
-			(at 132.08 69.85 0)
+			(at 91.44 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1768,8 +2903,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 132.08 60.96 0)
+		(property "Value" "GND"
+			(at 92.71 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1777,16 +2912,15 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 66.04 0)
+			(at 97.79 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 66.04 0)
+			(at 97.79 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,8 +2928,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 132.08 66.04 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +2938,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "889f3c0e-342b-4e4d-890d-004faee47694")
+			(uuid "e30b1a13-246d-446e-9993-64faefd0306c")
 		)
 		(instances
 			(project ""
@@ -1816,17 +2950,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 198.12 80.01 0)
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:GND")
+		(at 133.35 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3fdb88e9-19ba-47fd-879e-1d2a8401e1de")
-		(property "Reference" "#PWR05"
-			(at 198.12 86.36 0)
+		(uuid "33a5124b-d938-48cb-932f-bd8fac15775e")
+		(property "Reference" "#GND02"
+			(at 133.35 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1834,83 +2967,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 198.12 85.09 0)
+		(property "Value" "GND"
+			(at 130.81 73.66 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.778 1.5113)
 				)
+				(justify left bottom)
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 198.12 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "856ab176-5dc4-4d59-bfd1-6a6ff3eb2a91")
-		)
-		(instances
-			(project "ver1"
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 190.5 72.39 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d0dfe36-2878-4617-a474-cf23e84a002b")
-		(property "Reference" "#PWR08"
-			(at 194.31 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 186.69 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 72.39 0)
+			(at 133.35 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1919,7 +2986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 72.39 0)
+			(at 133.35 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1927,8 +2994,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 190.5 72.39 0)
+		(property "Description" ""
+			(at 133.35 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1937,29 +3004,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "838add81-2c40-43c7-84a9-c1ef8012b06a")
+			(uuid "99d3d125-90a2-4cdc-a381-9c4278466bdf")
 		)
 		(instances
 			(project "ver1"
 				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR08")
+					(reference "#GND02")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 132.08 78.74 0)
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:VCC")
+		(at 161.29 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7379d09e-f9c2-4b0b-9941-d8ccc3d80f94")
-		(property "Reference" "#PWR02"
-			(at 132.08 85.09 0)
+		(uuid "3cc0cd9c-1a0d-4255-8aba-1ebb2ff102b2")
+		(property "Reference" "#SUPPLY03"
+			(at 161.29 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,8 +3033,482 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 132.08 83.82 0)
+		(property "Value" "VCC"
+			(at 160.274 51.054 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3febbd1-f345-4ef1-8878-faab684c885c")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#SUPPLY03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:VCC")
+		(at 97.79 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "699c0b73-34d1-4957-a886-86ab3342ca0f")
+		(property "Reference" "#SUPPLY01"
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 96.774 54.864 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15861188-da8c-4877-bf88-1ae747cce501")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#SUPPLY01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:M03POLAR")
+		(at 107.95 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85160880-4f50-4ed6-aeba-06e551686b83")
+		(property "Reference" "JP1"
+			(at 110.49 69.342 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "M03POLAR"
+			(at 110.49 55.88 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SparkFun_Soil_Moisture_Sensor:MOLEX-1X3"
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "01c04968-6996-49f6-a09f-45d1419cb499")
+		)
+		(pin "1"
+			(uuid "e769dd13-48bf-420d-a1b6-0332bbaa8064")
+		)
+		(pin "3"
+			(uuid "e0bf6dae-1277-4fde-9c3e-bb65c3c808d7")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:GND")
+		(at 97.79 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8049a74-ed6d-40a9-84ff-8233f6a778eb")
+		(property "Reference" "#GND01"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 73.66 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e80bfcf-ca08-4e97-9f87-e77308c2ff6a")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#GND01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:100OHM-1/4W-5%(0603)")
+		(at 161.29 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd4ff5bc-157b-4402-9120-674e96439f5c")
+		(property "Reference" "R1"
+			(at 159.7914 86.36 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10k"
+			(at 164.592 86.36 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SparkFun_Soil_Moisture_Sensor:0603-RES"
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b27494c6-83bf-45da-9846-f6cfcf95ae11")
+		)
+		(pin "2"
+			(uuid "4ef5e4fb-f5f4-49ad-ac39-44bb881bda60")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:100OHM-1/4W-5%(0603)")
+		(at 181.61 72.39 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c7804c19-6824-47d0-90aa-e73a8343c3a2")
+		(property "Reference" "R2"
+			(at 180.1114 76.2 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100"
+			(at 184.912 76.2 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "SparkFun_Soil_Moisture_Sensor:0603-RES"
+			(at 181.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c81ab308-490e-4696-b10c-b7b34d10f6ec")
+		)
+		(pin "2"
+			(uuid "53f52c33-e2ed-464b-8409-462ef6462915")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:GND")
+		(at 161.29 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d397d649-8245-4303-8a5d-1cbf7840ce79")
+		(property "Reference" "#GND03"
+			(at 161.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 95.25 0)
+			(effects
+				(font
+					(size 1.778 1.5113)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6717a21f-34b3-4d7a-8556-232769c3d512")
+		)
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#GND03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 193.04 121.92 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8531e7c-9e44-47c1-822a-af2cb0f2eaaf")
+		(property "Reference" "D1"
+			(at 208.28 120.142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED GREEN"
+			(at 212.344 122.682 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +3516,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 78.74 0)
+			(at 193.04 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1985,7 +3525,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 78.74 0)
+			(at 193.04 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1993,8 +3533,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 132.08 78.74 0)
+		(property "Description" "Light emitting diode"
+			(at 193.04 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2003,7 +3543,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "88d735f1-2f66-407b-8e57-263d2d3c6616")
+			(uuid "60717e0b-2a4e-4de6-b53a-62f32560ec22")
+		)
+		(pin "2"
+			(uuid "1c5ed465-f302-4fbd-9798-2fb82211dc5b")
+		)
+		(instances
+			(project ""
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5V")
+		(at 157.48 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9536d74-fa94-4b94-a528-15a1e595aadc")
+		(property "Reference" "#PWR02"
+			(at 153.67 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 161.29 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 157.48 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e8b4bb0-76ef-4573-8e31-bc8240d666b3")
 		)
 		(instances
 			(project ""
@@ -2015,17 +3625,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 161.29 101.6 270)
+		(lib_id "SparkFun_Soil_Moisture_Sensor-eagle-import:VCC")
+		(at 133.35 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8eac402e-37e3-4509-b94a-010f1421537d")
-		(property "Reference" "#PWR03"
-			(at 157.48 101.6 0)
+		(uuid "df3618dc-a8fc-44b7-904f-8af058746ec9")
+		(property "Reference" "#SUPPLY02"
+			(at 133.35 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,86 +3642,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 165.1 101.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 161.29 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 161.29 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c3294166-b6e6-4ad4-a891-b10d28496b8b")
-		)
-		(instances
-			(project "ver1"
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun Qwiic Soil Moisture Sensor-eagle-import:ATTINY85-ARDUINOTINY85-20-SMT")
-		(at 153.67 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8776f7d-aefd-4233-8a09-56d5c6805530")
-		(property "Reference" "U1"
-			(at 140.97 63.246 0)
+		(property "Value" "VCC"
+			(at 132.334 54.864 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
 				(justify left bottom)
-				(hide yes)
 			)
 		)
-		(property "Value" "~"
-			(at 140.97 81.534 0)
-			(effects
-				(font
-					(size 1.778 1.5113)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "SparkFun Qwiic Soil Moisture Sensor:SO08-EIAJ_MCU"
-			(at 153.67 73.66 0)
+		(property "Footprint" ""
+			(at 133.35 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,7 +3661,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 73.66 0)
+			(at 133.35 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,8 +3669,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Atmel 8-pin 2/4/8kB flash uC"
-			(at 153.67 73.66 0)
+		(property "Description" ""
+			(at 133.35 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2139,232 +3679,164 @@
 			)
 		)
 		(pin "1"
-			(uuid "fa8b5f19-b8d0-4a2d-ae24-d747fd46e756")
+			(uuid "a25d6303-f708-4fa4-8b35-fdb3554174bf")
 		)
-		(pin "8"
-			(uuid "19848e26-bd2a-4795-a737-304c8073c615")
+		(instances
+			(project "ver1"
+				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
+					(reference "#SUPPLY02")
+					(unit 1)
+				)
+			)
 		)
-		(pin "3"
-			(uuid "a38b32e9-35c9-419e-be53-4769437c634a")
+	)
+	(symbol
+		(lib_id "MCU_Module:Arduino_Nano_v2.x")
+		(at 132.08 128.27 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dfef05c6-fca8-4d80-b1d8-cf9dcf4a1a46")
+		(property "Reference" "A1"
+			(at 156.972 119.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Arduino_Nano_v2.x"
+			(at 157.734 116.586 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Module:Arduino_Nano"
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf"
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Arduino Nano v2.x"
+			(at 132.08 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc351f2f-28cf-4a8d-9160-faf9ecd5e272")
+		)
+		(pin "10"
+			(uuid "f6a0fd9c-fe29-4242-bc83-cb7a05eda047")
+		)
+		(pin "14"
+			(uuid "02f2671d-ff10-4a65-90cd-4e6b35084aa9")
+		)
+		(pin "20"
+			(uuid "d4089b97-e763-4723-ae64-bdb45a46b3ee")
 		)
 		(pin "2"
-			(uuid "4a00409a-9bc1-4eff-bcf5-801dae33abdb")
+			(uuid "2f76427f-7ce6-4464-b8cc-ec50576d6111")
 		)
-		(pin "5"
-			(uuid "7dc70c11-232e-4c5c-8df6-5177fe0602c7")
+		(pin "8"
+			(uuid "0b7de479-6a15-48f7-93ab-c97cf7df5f4e")
 		)
-		(pin "7"
-			(uuid "e379fc6f-5c85-4f27-9a7b-bcbfe7198f47")
+		(pin "21"
+			(uuid "7696414c-8ba0-4e57-983c-1d060a5ccb6b")
+		)
+		(pin "9"
+			(uuid "4ae529f3-ca65-40d2-a741-0b3e4d4b6889")
+		)
+		(pin "15"
+			(uuid "6c789be6-5e3f-44de-a426-bd4f92cefd30")
+		)
+		(pin "19"
+			(uuid "173f83c6-776f-4123-b86a-0928a3492eef")
 		)
 		(pin "6"
-			(uuid "d0aedea6-a613-40ca-8169-de6e564a4799")
+			(uuid "85eb90c7-8f39-41e2-9d61-f0fd733f8744")
+		)
+		(pin "12"
+			(uuid "c287e853-ea0e-42d8-98d2-10c64534fd3a")
+		)
+		(pin "25"
+			(uuid "dd77baaa-f72c-4411-9b89-1c2096d10713")
+		)
+		(pin "28"
+			(uuid "13472ae2-3001-46c8-9134-30e8afc94a3b")
 		)
 		(pin "4"
-			(uuid "26a7afc8-a4f1-4e5e-9040-437ccff3f7ad")
+			(uuid "0daab7ef-49fc-4008-b91b-74e8c68ea93c")
+		)
+		(pin "26"
+			(uuid "a02d70b3-48f0-4d8a-b33d-fedc14a37b34")
+		)
+		(pin "24"
+			(uuid "c362f995-c1d4-4b6c-9a79-793efcb86679")
+		)
+		(pin "11"
+			(uuid "4e2255d3-c010-4109-8e85-fde2ae69a2c9")
+		)
+		(pin "3"
+			(uuid "eaa3800b-75fa-4878-bd69-8b19cb09a453")
+		)
+		(pin "30"
+			(uuid "7a118bf1-64ee-4659-b4b7-272797a30995")
+		)
+		(pin "17"
+			(uuid "4fc7ed9a-7d72-4788-80b3-adbdfe44f430")
+		)
+		(pin "13"
+			(uuid "6ef73dde-b2c8-4340-be5f-41916fb2af6f")
+		)
+		(pin "7"
+			(uuid "6b4d17ac-ec58-4743-9bf8-6c72ac5e7516")
+		)
+		(pin "16"
+			(uuid "4bcd034f-b0e8-4bba-b58c-686965a59aa3")
+		)
+		(pin "22"
+			(uuid "cb89ef96-7216-4539-97b1-736e5ae760d6")
+		)
+		(pin "27"
+			(uuid "4ea33af2-6239-4db9-a962-e4187c2a90c3")
+		)
+		(pin "29"
+			(uuid "113c914f-4713-4f2c-b2d9-a2efb0a75de3")
+		)
+		(pin "23"
+			(uuid "1c2dc29b-7c3d-4710-9a58-0fa7e8e3e75c")
+		)
+		(pin "5"
+			(uuid "54218ffd-bd3e-4267-9dbc-fc381962f7f3")
+		)
+		(pin "18"
+			(uuid "5e4c0fd0-c81e-4f9f-991f-ab055ad9c35a")
 		)
 		(instances
 			(project ""
 				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 161.29 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e098eb19-4537-4848-bb68-f02cfa9c9de4")
-		(property "Reference" "#PWR04"
-			(at 167.64 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 165.1 106.6799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 161.29 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 161.29 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 161.29 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbe4c924-153a-426f-84d7-ad6e971fdece")
-		)
-		(instances
-			(project "ver1"
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 190.5 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5be03e1-4e19-4a5d-b790-9433747f063d")
-		(property "Reference" "#PWR07"
-			(at 190.5 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 190.5 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 190.5 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b6d0ff2-640a-4c42-b79f-9b0b184a10f0")
-		)
-		(instances
-			(project "ver1"
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 198.12 62.23 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef7e30e9-b528-4ced-9f57-0d0be4145e22")
-		(property "Reference" "#PWR06"
-			(at 198.12 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 198.12 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 198.12 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 198.12 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f892d86-d277-4b3b-8087-03aa85e62a1e")
-		)
-		(instances
-			(project "ver1"
-				(path "/7dc9043a-ef1d-4623-9acc-dd1f81d56424"
-					(reference "#PWR06")
+					(reference "A1")
 					(unit 1)
 				)
 			)
