@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "SparkFun_Soil_Moisture_Sensor-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/SparkFun_Soil_Moisture_Sensor-eagle-import.kicad_sym")(options "")(descr ""))
+)

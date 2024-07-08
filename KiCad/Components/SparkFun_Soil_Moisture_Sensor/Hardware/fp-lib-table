@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SparkFun_Soil_Moisture_Sensor")(type "KiCad")(uri "$(KIPRJMOD)/SparkFun_Soil_Moisture_Sensor.pretty")(options "")(descr ""))
+)
