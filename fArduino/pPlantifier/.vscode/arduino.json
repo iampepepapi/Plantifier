@@ -1,0 +1,6 @@
+{
+    "sketch": "pPlantifier.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "COM6"
+}

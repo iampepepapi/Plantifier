@@ -1,0 +1,7 @@
+#line 1 "C:\\Users\\samue\\Documents\\GithubProjects\\Plantifier\\fArduino\\pPlantifier\\.vscode\\arduino.json"
+{
+    "sketch": "pPlantifier.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "COM6"
+}

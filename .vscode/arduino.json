@@ -1,4 +1,5 @@
 {
-    "sketch": "sketch.ino",
-    "output": "build"
+    "board": "arduino:avr:uno",
+    "sketch": "fArduino\\Plantifier.ino",
+    "port": "COM6"
 }
