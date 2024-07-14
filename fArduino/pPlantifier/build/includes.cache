@@ -11,6 +11,16 @@
   },
   {
     "Sourcefile": "C:\\Users\\samue\\Documents\\GithubProjects\\Plantifier\\fArduino\\pPlantifier\\build\\sketch\\pPlantifier.ino.cpp",
+    "Include": "DHTStable.h",
+    "Includepath": "C:\\Users\\samue\\Documents\\Arduino\\libraries\\DHTStable"
+  },
+  {
+    "Sourcefile": "C:\\Users\\samue\\Documents\\GithubProjects\\Plantifier\\fArduino\\pPlantifier\\build\\sketch\\pPlantifier.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samue\\Documents\\Arduino\\libraries\\DHTStable\\DHTStable.cpp",
     "Include": "",
     "Includepath": null
   }

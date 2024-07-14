@@ -1,5 +1,6 @@
-C:\Users\samue\Documents\GithubProjects\Plantifier\fArduino\pPlantifier\build\sketch\pPlantifier.ino.cpp.o: \
- C:\Users\samue\Documents\GithubProjects\Plantifier\fArduino\pPlantifier\build\sketch\pPlantifier.ino.cpp \
+C:\Users\samue\Documents\GithubProjects\Plantifier\fArduino\pPlantifier\build\libraries\DHTStable\DHTStable.cpp.o: \
+ C:\Users\samue\Documents\Arduino\libraries\DHTStable\DHTStable.cpp \
+ C:\Users\samue\Documents\Arduino\libraries\DHTStable\DHTStable.h \
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/binary.h \
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/WCharacter.h \
@@ -10,5 +11,4 @@ C:\Users\samue\Documents\GithubProjects\Plantifier\fArduino\pPlantifier\build\sk
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Printable.h \
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/USBAPI.h \
  C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \
- C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard/pins_arduino.h \
- C:\Users\samue\Documents\Arduino\libraries\DHTStable/DHTStable.h
+ C:\Users\samue\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\variants\standard/pins_arduino.h
