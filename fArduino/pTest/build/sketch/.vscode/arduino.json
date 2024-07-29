@@ -1,0 +1,8 @@
+#line 1 "C:\\Users\\samue\\Documents\\GithubProjects\\Plantifier\\fArduino\\pTest\\.vscode\\arduino.json"
+{
+    "sketch": "pTest.ino",
+    "output": "build",
+    "configuration": "cpu=atmega328old",
+    "board": "arduino:avr:nano",
+    "port": "COM6"
+}

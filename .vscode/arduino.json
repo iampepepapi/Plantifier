@@ -1,5 +1,6 @@
 {
-    "board": "arduino:avr:uno",
-    "sketch": "fArduino\\Plantifier.ino",
-    "port": "COM6"
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "port": "COM6",
+    "sketch": "fArduino\\pTest\\pTest.ino"
 }

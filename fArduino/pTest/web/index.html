@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sensor Data</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@latest"></script>
+        <style>
+            #chart {
+                width: 100%;
+                height: 500px;
+            }
+            #refreshButton {
+                margin: 10px 0;
+                padding: 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #refreshButton:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sensor Data</h1>
+        <p id="serialStatus">
+            Serial Status: <span id="serialConnection">Unknown</span>
+        </p>
+        <button id="refreshButton">Refresh Connection</button>
+        <p>Moisture Level: Plant Sensor | <span id="moisture">0</span>%</p>
+        <p>Temperature: Room 1 | <span id="temperature">0</span>°C</p>
+        <p>Humidity: Room 1 | <span id="humidity">0</span>%</p>
+        <div id="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <script>
+            // Initialize the WebSocket connection
+            const socket = io();
+
+            // Set up the Chart.js chart
+            const ctx = document.getElementById("myChart").getContext("2d");
+            const data = {
+                labels: [],
+                datasets: [
+                    {
+                        label: "Moisture Level: Plant Sensor",
+                        data: [],
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1,
+                        fill: false,
+                        yAxisID: "moisture",
+                    },
+                    {
+                        label: "Temperature: Room 1",
+                        data: [],
+                        borderColor: "rgba(255, 99, 132, 1)",
+                        borderWidth: 1,
+                        fill: false,
+                        yAxisID: "temperature",
+                    },
+                    {
+                        label: "Humidity: Room 1",
+                        data: [],
+                        borderColor: "rgba(54, 162, 235, 1)",
+                        borderWidth: 1,
+                        fill: false,
+                        yAxisID: "humidity",
+                    },
+                ],
+            };
+            const config = {
+                type: "line",
+                data: data,
+                options: {
+                    scales: {
+                        x: {
+                            type: "time",
+                            time: {
+                                unit: "second",
+                            },
+                            title: {
+                                display: true,
+                                text: "Time",
+                            },
+                        },
+                        moisture: {
+                            type: "linear",
+                            position: "left",
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: "Moisture Level (%)",
+                            },
+                        },
+                        temperature: {
+                            type: "linear",
+                            position: "right",
+                            beginAtZero: true,
+                            max: 50,
+                            title: {
+                                display: true,
+                                text: "Temperature (°C)",
+                            },
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                        },
+                        humidity: {
+                            type: "linear",
+                            position: "right",
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: "Humidity (%)",
+                            },
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                        },
+                    },
+                },
+            };
+            const myChart = new Chart(ctx, config);
+
+            // Listen for sensor data from the server
+            socket.on("sensorData", (sensorData) => {
+                const now = new Date();
+                data.labels.push(now);
+                data.datasets[0].data.push({ x: now, y: sensorData.moisture });
+                data.datasets[1].data.push({
+                    x: now,
+                    y: sensorData.temperature,
+                });
+                data.datasets[2].data.push({ x: now, y: sensorData.humidity });
+
+                document.getElementById("moisture").innerText =
+                    sensorData.moisture;
+                document.getElementById("temperature").innerText =
+                    sensorData.temperature;
+                document.getElementById("humidity").innerText =
+                    sensorData.humidity;
+
+                if (data.labels.length > 50) {
+                    data.labels.shift();
+                    data.datasets[0].data.shift();
+                    data.datasets[1].data.shift();
+                    data.datasets[2].data.shift();
+                }
+                myChart.update();
+            });
+
+            // Listen for serial connection status from the server
+            socket.on("serialStatus", (status) => {
+                const serialConnectionElement =
+                    document.getElementById("serialConnection");
+                if (status === "connected") {
+                    serialConnectionElement.innerText = "Connected";
+                    serialConnectionElement.style.color = "green";
+                } else {
+                    serialConnectionElement.innerText = "Disconnected";
+                    serialConnectionElement.style.color = "red";
+                }
+            });
+
+            // Refresh connection button
+            document
+                .getElementById("refreshButton")
+                .addEventListener("click", () => {
+                    fetch("/refresh-connection")
+                        .then((response) => response.text())
+                        .then((text) => {
+                            console.log(text);
+                        })
+                        .catch((error) => {
+                            console.error(
+                                "Error refreshing connection:",
+                                error
+                            );
+                        });
+                });
+        </script>
+    </body>
+</html>
