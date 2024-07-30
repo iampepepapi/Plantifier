@@ -23,7 +23,7 @@ app.use(
     })
 );
 
-const portPath = "COM6";
+const portPath = "COM4";
 
 let serialConnectionEstablished = false;
 let port;
