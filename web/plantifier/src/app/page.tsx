@@ -27,6 +27,7 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 import { TooltipProps as RechartsTooltipProps } from "recharts";
+import Papa from "papaparse"; // Import PapaParse
 
 // Chart configuration for dynamic data
 const chartConfig = {
@@ -55,7 +56,7 @@ interface SensorData {
 // Update the custom tooltip formatter to match expected types
 const customTooltipFormatter = (
   value: number | string | (string | number)[],
-  name: string
+  name: string | number
 ): [string, string?] => {
   switch (name) {
     case "temperature":
@@ -65,7 +66,7 @@ const customTooltipFormatter = (
     case "humidity":
       return [`Humidity ${value} % `, "Humidity"];
     default:
-      return [value];
+      return [String(value)];
   }
 };
 
@@ -188,14 +189,35 @@ const Component = () => {
     }
   };
 
+  const handleExportCSV = () => {
+    const csvData = data.map((entry) => ({
+      Time: entry.time,
+      Moisture: entry.moisture,
+      Temperature: entry.temperature,
+      Humidity: entry.humidity,
+    }));
+
+    const csv = Papa.unparse(csvData);
+
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", "sensor_data.csv");
+    link.style.visibility = "hidden";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="p-4 md:px-96">
-      <Card>
+    <div className="m-auto flex justify-center p-4 md:p-0">
+      <Card className="flex flex-col w-96 md:w-auto p-0 md:p-0">
         <CardHeader>
           <CardTitle className="text-primary">Area Chart - Gradient</CardTitle>
           <CardDescription>Showing real-time sensor data</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="">
           <div className="pb-4">
             <p>
               Moisture Level: Plant Sensor |{" "}
@@ -224,7 +246,7 @@ const Component = () => {
                 dataKey="time"
                 tickLine={false}
                 axisLine={false}
-                tickMargin={8}
+                tickMargin={10}
               />
               <YAxis yAxisId="moisture" domain={[0, 100]} />
               <YAxis
@@ -322,6 +344,9 @@ const Component = () => {
                   Refresh Connection
                 </Button>
               )}
+              <Button className="mt-2 self-end" onClick={handleExportCSV}>
+                Export Data
+              </Button>
             </div>
           </div>
         </CardFooter>
