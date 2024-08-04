@@ -53,6 +53,8 @@ const initializeSerialPort = () => {
         }
     });
 
+    // this is a test
+
     port.on("error", (err) => {
         console.log("Serial port error: ", err.message);
         serialConnectionEstablished = false;
