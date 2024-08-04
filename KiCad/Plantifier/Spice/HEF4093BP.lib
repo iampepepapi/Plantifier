@@ -1,0 +1,26 @@
+* HEF4093BP SPICE Model
+.subckt HEF4093BP 1A 1B 1Y 2Y 2A 2B VSS 3A 3B 3Y 4Y 4A 4B VDD
+* 1st NAND gate
+XNAND1 1Y 1A 1B VDD VSS NAND_Schmitt
+* 2nd NAND gate
+XNAND2 2Y 2A 2B VDD VSS NAND_Schmitt
+* 3rd NAND gate
+XNAND3 3Y 3A 3B VDD VSS NAND_Schmitt
+* 4th NAND gate
+XNAND4 4Y 4A 4B VDD VSS NAND_Schmitt
+.ends HEF4093BP
+
+* Subcircuit for a NAND gate with Schmitt trigger
+.subckt NAND_Schmitt Y A B VDD VSS
+M1 Y A VDD VDD PMOS L=1u W=10u
+M2 Y B VDD VDD PMOS L=1u W=10u
+M3 Y A VSS VSS NMOS L=1u W=10u
+M4 Y B VSS VSS NMOS L=1u W=10u
+R1 A VSS 10k
+R2 B VSS 10k
+.ends NAND_Schmitt
+
+* PMOS model
+.model PMOS PMOS (LEVEL=1 VTO=-1 KP=30u)
+* NMOS model
+.model NMOS NMOS (LEVEL=1 VTO=1 KP=50u)

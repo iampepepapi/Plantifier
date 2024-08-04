@@ -1,0 +1,5 @@
+* LED SPICE Model
+.subckt LED D K
+D1 D K DLED
+.model DLED D (IS=1n N=1.7 Rs=1 Bv=5 IBV=10u Cjo=10p)
+.ends LED
